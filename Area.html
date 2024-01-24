@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circle Calculators</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Circle Circumference Calculator</h1>
+    <div class="form-group">
+      <label for="radius">Enter the radius of the circle:</label>
+      <input type="number" class="form-control" id="radius">
+    </div>
+    <button class="btn btn-primary" onclick="Circle.calculateCircumference('radius', 'result')">Calculate Circumference</button>
+    <div id="result" class="mt-3"></div>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Circle Area Calculator</h1>
+    <div class="form-group">
+      <label for="radius1">Enter the radius of the circle:</label>
+      <input type="number" class="form-control" id="radius1">
+    </div>
+    <button class="btn btn-primary" onclick="Circle1.calculateArea('radius1', 'result1')">Calculate Area</button>
+    <div id="result1" class="mt-3"></div>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Cube Calculator</h1>
+    <div class="form-group">
+      <label for="sideLength">Enter the side length of the cube:</label>
+      <input type="number" class="form-control" id="sideLength">
+    </div>
+    <button class="btn btn-primary" onclick="Cube.calculateVolume('sideLength', 'result2')">Calculate Volume</button>
+    <button class="btn btn-primary" onclick="Cube.calculateSurfaceArea('sideLength', 'result2')">Calculate Surface Area</button>
+    <div id="result2" class="mt-3"></div>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Square Calculator</h1>
+    <div class="form-group">
+      <label for="sideLength1">Enter the side length of the square:</label>
+      <input type="number" class="form-control" id="sideLength1">
+    </div>
+    <button class="btn btn-primary" onclick="Square.calculatePerimeter('sideLength1', 'result3')">Calculate Perimeter</button>
+    <button class="btn btn-primary" onclick="Square.calculateArea1('sideLength1', 'result3')">Calculate Area</button>
+    <div id="result3" class="mt-3"></div>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Rectangle Calculator</h1>
+    <div class="form-group">
+      <label for="length">Enter the length of the rectangle:</label>
+      <input type="number" class="form-control" id="length">
+    </div>
+    <div class="form-group">
+      <label for="width">Enter the width of the rectangle:</label>
+      <input type="number" class="form-control" id="width">
+    </div>
+    <button class="btn btn-primary" onclick="Rectangle.calculatePerimeter1('length', 'width', 'result4')">Calculate Perimeter</button>
+    <button class="btn btn-primary" onclick="Rectangle.calculateArea2('length', 'width', 'result4')">Calculate Area</button>
+    <div id="result4" class="mt-3"></div>
+  </div>
+
+
+  <div class="container mt-5">
+    <h1>Sphere Calculator</h1>
+    <div class="form-group">
+      <label for="radius2">Enter the radius of the sphere:</label>
+      <input type="number" class="form-control" id="radius2">
+    </div>
+    <button class="btn btn-primary" onclick="Sphere.calculateVolume1('radius2', 'result5')">Calculate Volume</button>
+    <button class="btn btn-primary" onclick="Sphere.calculateSurfaceArea1('radius2', 'result5')">Calculate Surface Area</button>
+    <div id="result5" class="mt-3"></div>
+  </div>
+
+
+
+  <script src="Area1.js"></script>
+  <script src="Area.js"></script>
+  <script src="cube.js"></script>
+  <script src="square.js"></script>
+  <script src="rectangle.js"></script>
+  <script src="sphere.js"></script>
+</body>
+</html>
